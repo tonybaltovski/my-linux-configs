@@ -31,7 +31,7 @@ sudo apt-get update
 sudo apt-get install -y gnome-session-fallback arduino guake terminator gedit-plugins retext openssh-server git qtcreator \
                      vlc diffuse cutecom nautilus-open-terminal rabbitvcs-*
 
-sudo apt-get purge thunderbird* pidgin* gwibber* rhythmbox* ubuntuone* empathy* totem*
+sudo apt-get -y purge thunderbird* pidgin* gwibber* rhythmbox* ubuntuone* empathy* totem*
 
 sudo apt-get -y dist-upgrade
 
