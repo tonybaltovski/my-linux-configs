@@ -1,0 +1,9 @@
+# CC3200 LaunchPad
+SUBSYSTEM=="usb", ATTRS{idVendor}=="0451", ATTRS{idProduct}=="c32a", MODE="0660", GROUP="dialout", 
+RUN+="/sbin/modprobe ftdi-sio" RUN+="/bin/sh -c '/bin/echo 0451 c32a > /sys/bus/usb-serial/drivers/ftdi_sio/new_id'"
+# MSP-EXP430G2 and MSP-EXP430FR5739 LaunchPad
+ATTRS{idVendor}=="0451", ATTRS{idProduct}=="f432", MODE="0660", GROUP="dialout"
+# MSP-EXP430F5529LP and MSP-EXP430FR5969 LaunchPad
+ATTRS{idVendor}=="1cbe", ATTR{idProduct}=="00fd", MODE="0660", GROUP="dialout"
+# EK-TM4C123GXL, EK-TM4C1294XL and EK-LM4F120XL LaunchPad
+ATTRS{idVendor}=="1cbe", ATTRS{idProduct}=="00fd", MODE="0660", GROUP="dialout"
