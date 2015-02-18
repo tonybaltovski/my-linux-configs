@@ -4,4 +4,4 @@ wget http://energia.nu/downloads/downloadv3.php?file=energia-0101E0014-linux64.t
 tar -zxvf energia-0101E0014-linux64.tgz
 rm energia-0101E0014-linux64.tgz
 cd ..
-sudo cp 49-teensy.rules /etc/udev/rules.d/ 
+sudo cp 99-ti-launchpad.rules /etc/udev/rules.d/ 
