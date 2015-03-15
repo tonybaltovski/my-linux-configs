@@ -1,4 +1,4 @@
-my-unix-config
+my-linux-config
 ==============
 
-My various unix configs.
+My various linux configs.

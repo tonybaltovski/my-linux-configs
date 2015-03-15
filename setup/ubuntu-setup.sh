@@ -29,7 +29,7 @@ fi
 sudo apt-get update
 
 sudo apt-get install -y gnome-session-fallback arduino guake terminator gedit-plugins retext openssh-server git qtcreator \
-                     vlc diffuse cutecom nautilus-open-terminal rabbitvcs-*
+                     vlc diffuse cutecom nautilus-open-terminal rabbitvcs-* xfsdump xfsprogs
 
 sudo apt-get -y purge thunderbird* pidgin* gwibber* rhythmbox* ubuntuone* empathy* totem*
 
@@ -43,3 +43,7 @@ gsettings set org.gnome.desktop.default-applications.terminal exec 'terminator'
 
 # Restart Nautilus for changes to take effect.
 nautilus -q
+
+# Add user to dialout
+sudo adduser $USER dialout
+echo "Added yourself to dialout, make logout to take effect."

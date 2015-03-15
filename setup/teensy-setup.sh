@@ -1,4 +1,5 @@
 #!/bin/bash
+cd ~/
 wget http://arduino.googlecode.com/files/arduino-1.0.5-linux64.tgz
 tar -zxvf arduino-1.0.5-linux64.tgz
 rm arduino-1.0.5-linux64.tgz
