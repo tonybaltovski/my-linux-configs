@@ -49,6 +49,10 @@ git config --global user.email "tony.baltovski@gmail.com"
 git config --global user.name "Tony Baltovski"
 git config --global credential.helper cache
 
+sudo echo "hardstatus alwayslastline '%{gk}[ %{G}%H %{g}][%= %{wk}%?%-Lw%?%{=b kR} (%{W}%n*%f %t%?(%u)%?%{=b kR})%{= kw}%?%+Lw%?%?%= %{g}][%{Y}%l%{g}] %{=b C}[ %m/%d %c ]%{W}'
+startup_message off
+defscrollback 30000" >> /etc/screenrc
+
 gsettings set org.gnome.desktop.default-applications.terminal exec 'terminator'
 
 # Restart Nautilus for changes to take effect.
