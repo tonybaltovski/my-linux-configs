@@ -39,7 +39,7 @@ sudo apt-get -qq update
 echo "[Installing the packages]"
 sudo apt-get install -y gnome-session-fallback arduino guake terminator gedit-plugins retext openssh-server git qtcreator \
                      vlc diffuse cutecom nautilus-open-terminal rabbitvcs-* xfsdump xfsprogs atom can-utils indicator-multiload \
-		     indicator-cpufreq
+		     indicator-cpufreq screen
 
 sudo apt-get -y purge thunderbird* pidgin* gwibber* rhythmbox* ubuntuone* empathy* totem*
 
